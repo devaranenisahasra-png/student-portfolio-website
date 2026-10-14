@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio website">
+  <title>Devaraneni Sahasra | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">Sahasra<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Devaraneni Sahasra</span></h1>
+        <h2>IT Student &amp; Aspiring Web Developer</h2>
+        <p class="intro">I enjoy learning new technologies and building simple, useful, and user-friendly websites.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore My Work</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative web development illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <p><span class="code-purple">const</span> student = {</p>
+          <p class="indent">name: <span class="code-green">'Sahasra'</span>,</p>
+          <p class="indent">field: <span class="code-green">'IT'</span>,</p>
+          <p class="indent">learning: <span class="code-green">'Web Dev'</span></p>
+          <p>};</p>
+          <p class="code-comment">// learning every day ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About <span>Me</span></h2>
+      </div>
+      <div class="about-card">
+        <div class="about-mark">S</div>
+        <div>
+          <h3>A student with a passion for technology</h3>
+          <p>I am an IT student interested in web development, programming, and problem-solving. I am building my skills through practice projects and coursework. My goal is to create accessible websites and continue learning new tools.</p>
+          <p><strong>Current focus:</strong> HTML, CSS, JavaScript, and GitHub.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'M LEARNING</p>
+          <h2>My <span>Skills</span></h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card"><div class="skill-icon">🌐</div><h3>HTML</h3><p>Structuring web pages with semantic elements.</p></article>
+          <article class="skill-card"><div class="skill-icon">🎨</div><h3>CSS</h3><p>Styling layouts, colors, animations, and responsive pages.</p></article>
+          <article class="skill-card"><div class="skill-icon">⚡</div><h3>JavaScript</h3><p>Adding interactions and dynamic behavior to websites.</p></article>
+          <article class="skill-card"><div class="skill-icon">🐙</div><h3>GitHub</h3><p>Saving code and sharing projects online.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">A FEW THINGS I'VE BUILT</p>
+        <h2>My <span>Projects</span></h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual visual-one">🖼️</div>
+          <div class="project-content"><p class="project-label">HTML · CSS · JavaScript</p><h3>Image Gallery</h3><p>A responsive gallery layout for viewing images with a clean design.</p><a href="#contact">Ask about this project ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-two">🧮</div>
+          <div class="project-content"><p class="project-label">HTML · CSS · JavaScript</p><h3>Colorful Calculator</h3><p>A beginner-friendly calculator with number buttons and basic arithmetic operations.</p><a href="#contact">Ask about this project ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-three">💻</div>
+          <div class="project-content"><p class="project-label">HTML · CSS · JavaScript</p><h3>Personal Portfolio</h3><p>This website introduces my background, skills, projects, and contact details.</p><a href="#contact">Contact me ↗</a></div>
+        </article>
+      </div>
+      <p class="note">Note: These are sample project descriptions. Replace them with projects you have actually completed before submitting.</p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Contact <span>Me</span></h2>
+          <p class="section-subtitle">Have a question or want to discuss a project? Send me a message.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+          <button class="button primary" type="submit">Prepare Message</button>
+          <p id="formMessage" class="form-message" role="status"></p>
+          <p class="form-hint">Demo form: it validates your input but does not send or store messages.</p>
+        </form>
+        <div class="contact-links">
+          <a href="mailto:devaranenisahasra@gmail.com">✉ devaranenisahasra@gmail.com</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Devaraneni Sahasra · Student Portfolio Website</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
